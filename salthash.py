@@ -29,7 +29,7 @@ try:
         psw = input("Create your password: ")
 
         # Generate salt and hash the password
-        salt = generateSalt(20)
+        salt = generateSalt(8)
         hashed = hashPsw(psw, salt)
 
         # Insert the created pssword into database
